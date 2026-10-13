@@ -1,0 +1,5 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:{{ .Site.Params.author.name | default .Site.Title }}
+{{ with .Site.Params.socialspec.email }}EMAIL:{{ . }}{{ end }}
+END:VCARD

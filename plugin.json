@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "title": "SocialSpec",
+  "description": "Adds SocialSpec contact and about files to your Micro.blog site.",
+  "fields": [
+    {
+      "field": "params.socialspec.email",
+      "label": "Email",
+      "type": "string",
+      "placeholder": "Enter your email address"
+    }
+  ]
+}
