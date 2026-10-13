@@ -1,0 +1,19 @@
+{{- $name := .Site.Params.author.name | default .Site.Title -}}
+
+{{- $emailLine := "" -}}
+{{- with .Site.Params.socialspec_email -}}
+ {{- $emailLine = printf "EMAIL:%s\r\n" . -}}
+{{- end -}}
+
+{{- $content := printf
+ "BEGIN:VCARD\r\nVERSION:3.0\r\nN:;;;;\r\nFN:%s\r\n%sEND:VCARD\r\n"
+ $name $emailLine
+-}}
+
+{{- $file := resources.FromString ".well-known/contact.vcf" $content -}}
+{{- $published := $file.RelPermalink -}}
+
+{{- with .Site.GetPage "/about" -}}
+  {{- $aboutFile := resources.FromString ".well-known/about.md" .RawContent -}}
+  {{- $aboutPublished := $aboutFile.RelPermalink -}}
+{{- end -}}
