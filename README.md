@@ -8,4 +8,7 @@ files to a site:
 - `/.well-known/about.md` contains the raw Markdown from the site’s `/about/`
   page.
 
-The plug-in adds an **Email** setting under `params.socialspec.email`.
+The files are generated with Hugo resources from the included
+`socialspec.html` partial.
+
+The plug-in adds an **Email** setting under `params.socialspec_email`.
