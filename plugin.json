@@ -3,7 +3,7 @@
   "title": "SocialSpec",
   "description": "Adds SocialSpec contact and about files to your Micro.blog site.",
   "includes": [
-    "socialspec.html"
+    "socialspec-plugin.html"
   ],
   "fields": [
     {

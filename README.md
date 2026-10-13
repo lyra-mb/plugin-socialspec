@@ -9,6 +9,6 @@ files to a site:
   page.
 
 The files are generated with Hugo resources from the included
-`socialspec.html` partial.
+`socialspec-plugin.html` partial.
 
 The plug-in adds an **Email** setting under `params.socialspec_email`.
