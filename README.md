@@ -1,0 +1,2 @@
+# plugin-socialspec
+SocialSpec
